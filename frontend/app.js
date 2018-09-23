@@ -25,6 +25,7 @@ function updateUI() {
     document.getElementById('btn-login').style.display = 'none';
     document.getElementById('btn-logout').style.display = 'inline';
     const profile = JSON.parse(localStorage.getItem('profile'));
+    console.log( profile )
     // show username
     document.getElementById('nick').textContent = profile.email;
   }
