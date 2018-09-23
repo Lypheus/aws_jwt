@@ -3,7 +3,7 @@
 // Fill in with your values
 const AUTH0_CLIENT_ID = 'lWQpQfEU8uAWrO6AhLDHe9eC330e7e5t';
 const AUTH0_DOMAIN = 'kudosee.auth0.com';
-const AUTH0_CALLBACK_URL = window.location.href; // eslint-disable-line
+const AUTH0_CALLBACK_URL = 'http://localhost:3000';//window.location.href; // eslint-disable-line
 const PUBLIC_ENDPOINT = 'https://v8d177it6b.execute-api.us-west-2.amazonaws.com/dev/api/public';
 const PRIVATE_ENDPOINT = 'https://v8d177it6b.execute-api.us-west-2.amazonaws.com/dev/api/private';
 
@@ -27,7 +27,7 @@ function updateUI() {
     const profile = JSON.parse(localStorage.getItem('profile'));
     console.log( profile )
     // show username
-    document.getElementById('nick').textContent = profile.email;
+    //document.getElementById('nick').textContent = profile.email;
   }
 }
 
